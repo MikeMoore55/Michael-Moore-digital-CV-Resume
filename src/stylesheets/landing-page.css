@@ -1,0 +1,28 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/background-image-medium.jpg);
+}
+
+.side-nav{
+    position: fixed;
+    z-index: 5;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(30,30,30,1) 48%, rgba(56,56,56,1) 100%);
+}
+
+@media (min-width: 800px){
+}
+
+@media (min-width: 1000px){
+    body{
+        background-image: url(../images/background-image-large.jpg);
+    }    
+}
