@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./src/scripts/main.js" defer></script>
     <link rel="stylesheet" href="./src/stylesheets/landing-page.css">
 </head>
 <body>
-    <nav class="side-nav">
+
+    <button id="menu-btn" class="menu-btn" onclick="appear()"><img class="menu-icon" src="./src/images/menu-icon.png" alt="menu icon png img"></button>
+    <nav id="side-nav" class="side-nav">
         <div class="nav-content">
+            
+            <button id="menu-btn" class="menu-btn" onclick="disappear()"><img class="menu-icon" src="./src/images/menu-icon.png" alt="menu icon png img"></button>
 
             <div class="content">
-                <a>about</a>
-                <a>img</a>
+              
             </div>
 
         </div>
         <p>hi</p>
     </nav>
+    <main>
+        <section class="main-content">
+            <div class="intro">
+                <h1>Michael Moore</h1>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

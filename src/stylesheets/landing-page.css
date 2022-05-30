@@ -7,7 +7,53 @@ body{
     background-image: url(../images/background-image-medium.jpg);
 }
 
+.menu-btn{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    border: none;
+    background-color: transparent;
+    width: 15%;
+    animation-name: menu-grow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-play-state: running;
+}
+
+@keyframes menu-grow{
+  /*   from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    } */
+
+    0%{
+        transform: scale(0.7);
+    }
+
+    33.33%{
+        transform: scale(1);
+    }
+
+    66.33%{
+        transform: scale(0.7);
+    }
+
+    99.33%{
+        transform: scale(1);
+    }
+}
+
+.menu-icon{
+    position: relative;
+    width: 100%;
+}
+
 .side-nav{
+    display: none;
     position: fixed;
     z-index: 5;
     top: 0%;
