@@ -7,27 +7,58 @@
     <title>Document</title>
     <script src="./src/scripts/main.js" defer></script>
     <link rel="stylesheet" href="./src/stylesheets/landing-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <button id="menu-btn" class="menu-btn" onclick="appear()"><img class="menu-icon" src="./src/images/menu-icon.png" alt="menu icon png img"></button>
+    <button id="menu-btn" class="open-menu-btn" onclick="appear()">
+        <img class="open-menu-icon" src="./src/images/menu-icon.png" alt="menu icon png icon">
+    </button>
     <nav id="side-nav" class="side-nav">
         <div class="nav-content">
             
-            <button id="menu-btn" class="menu-btn" onclick="disappear()"><img class="menu-icon" src="./src/images/menu-icon.png" alt="menu icon png img"></button>
+            <button id="close-btn" class="close-btn" onclick="disappear()">
+                <img class="close-icon" src="./src/images/close-icon.png" alt="close icon png icon">
+            </button>
 
-            <div class="content">
-              
+            <div class="nav-content">
+              <p class="nav-links"><a>About</a></p>
+              <p class="nav-links"><a>Skills</a></p>
+              <p class="nav-links"><a>Qualifications</a></p>
+              <p class="nav-links"><a>Education</a></p>
+              <p class="nav-links"><a>Interests</a></p>
+              <p class="nav-links"><a>My Work</a></p>
+              <p class="nav-links"><a>Socials</a></p>
             </div>
 
         </div>
-        <p>hi</p>
     </nav>
     <main>
-        <section class="main-content">
+        <section class="landing-page">
             <div class="intro">
+                <p class="intro-top">Hi, my name is...</p>
                 <h1>Michael Moore</h1>
+                <p class="intro-bottom">This is my portfolio!</p>
             </div>
+        </section>
+        <section class="about">
+                <h2>about</h2>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas labore quibusdam. Assumenda, reprehenderit ullam hic obcaecati nulla eum? Quos ex aliquam dolor provident eius velit voluptatibus accusantium nihil praesentium.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat eius incidunt aliquam dicta, labore maxime voluptatem tenetur nostrum esse aspernatur debitis minima obcaecati eveniet quisquam officiis dignissimos tempora sequi.</p>
+                </div>
+        </section>
+        <section class="main-content">
+            
+            <section class="skills">
+                <h2>skills</h2>
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id sapiente laborum ex, aut culpa et amet minus illum repudiandae est fugit numquam atque. Provident a, excepturi nihil quos autem officiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ipsa placeat adipisci rerum tempora nobis saepe ea eius quibusdam provident sapiente pariatur, illum repudiandae. Illo explicabo eaque ex iure neque!</p>
+                </div>
+            </section>
         </section>
     </main>
 </body>
